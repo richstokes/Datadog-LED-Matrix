@@ -36,6 +36,7 @@ The device will reboot whenever you change any files, so after copying these it 
 ## metrics.json
 
 This file lists out the metrics you would like to display. Just add any query you can make in datadog (their [metrics explorer](https://app.datadoghq.com/metric/explorer) is a good place to play around).  
+  
 Setting the `metric_name` controls the "title" text above the metric. You can also set prefix/trailing strings and the amount of decimal places to round to. 
 
 Setting `high_threshold` is the value at which the metric will be displayed in <span style="color:red">red</span> if the value is greater than.  
