@@ -1,0 +1,13 @@
+{
+    "metrics": [
+        {"query":"max:aws.ecs.cpuutilization{servicename:example-api-service}", "metric_name":"API CPU", "trailing_string":"%", "prefix_string":"", "rounding_places":0, "high_threshold":75},
+        {"query":"avg:aws.rds.cpuutilization{dbinstanceidentifier:example-production}", "metric_name":"DB CPU", "trailing_string":"%", "prefix_string":"", "rounding_places":0, "high_threshold":75},
+        {"query":"avg:aws.rds.read_latency{dbinstanceidentifier:example-production}", "metric_name":"DB Latency", "trailing_string":"s", "prefix_string":"", "rounding_places":3, "high_threshold":0.002},
+        {"query":"avg:postgresql.percent_usage_connections{server:example-production}", "metric_name":"DB Conns", "trailing_string":"", "prefix_string":"", "rounding_places":0, "high_threshold":0.75},
+        {"query":"avg:aws.ecs.service.running{service:example-service}", "metric_name":"svc count", "trailing_string":"", "prefix_string":"x", "rounding_places":0, "high_threshold":100},
+        {"query":"avg:synthetics.http.response.time{check_id:123-456-789}", "metric_name":"Synthetic", "trailing_string":"ms", "prefix_string":"", "rounding_places":0, "high_threshold":200}
+    ],
+    "totalled_metrics": [
+        {"query":"sum:aws.applicationelb.httpcode_elb_5xx{*}.as_count()", "metric_name":"ALB 5xx", "trailing_string":"", "time_range":600, "high_threshold":10}
+    ]
+}
