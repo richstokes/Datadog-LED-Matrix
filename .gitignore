@@ -1,3 +1,4 @@
 secrets.py
 metrics.json
 tests/*
+.DS_Store
