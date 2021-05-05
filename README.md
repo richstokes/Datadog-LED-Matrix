@@ -8,7 +8,7 @@ Display metrics from Datadog in realtime on an [LED RGB Matrix](https://learn.ad
 It lets you keep a pulse on your infrastructure by displaying your most important metrics on an LED wall board. It will light up anomalies in red. It looks great in any home or office. Voted must-have accessory Spring 2021 by Country Living. 
 
 <p align="center">
-  <img width="20%" height="20%" src="https://raw.githubusercontent.com/richstokes/Datadog-LED-Matrix/main/shot1.jpg"> <img src="https://raw.githubusercontent.com/richstokes/Datadog-LED-Matrix/main/shot2.jpg">
+  <img width="20%" height="20%" src="https://raw.githubusercontent.com/richstokes/Datadog-LED-Matrix/main/shot1.jpg"> <img width="20%" height="20%" src="https://raw.githubusercontent.com/richstokes/Datadog-LED-Matrix/main/shot2.jpg">
 </p>
 
 <p align="center">
