@@ -1,11 +1,23 @@
 Display metrics from Datadog in realtime on an [LED RGB Matrix](https://learn.adafruit.com/adafruit-matrixportal-m4).  
 
+<p align="center">
+  <img width="30%" height="30%" src="https://raw.githubusercontent.com/richstokes/Datadog-LED-Matrix/main/shot3.jpg">
+</p>
+
+
 It lets you keep a pulse on your infrastructure by displaying your most important metrics on an LED wall board. It will light up anomalies in red. It looks great in any home or office. Voted must-have accessory Spring 2021 by Country Living. 
 
-![demo video](https://raw.githubusercontent.com/richstokes/Datadog-LED-Matrix/main/demo.gif)
+<p align="center">
+  <img width="20%" height="20%" src="https://raw.githubusercontent.com/richstokes/Datadog-LED-Matrix/main/shot1.jpg"> <img src="https://raw.githubusercontent.com/richstokes/Datadog-LED-Matrix/main/shot2.jpg">
+</p>
+
+<p align="center">
+  <img width="15%" height="15%" src="https://raw.githubusercontent.com/richstokes/Datadog-LED-Matrix/main/demo.gif">
+</p>
 
 &nbsp;
-> It's easy to make! You just have to screw a couple of things together. You can then display any datadog metric you like.
+
+It's easy to make! You just have to screw a couple of things together. You can then display any datadog metric you like.
 
 &nbsp;
 
