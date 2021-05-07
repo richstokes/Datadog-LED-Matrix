@@ -18,7 +18,7 @@ from adafruit_ntp import NTP
 import json
 
 print('Starting up..')
-DELAY_BETWEEN=5 # Time delay between datadog queries / how long to leave each metric displayed for. If set too low, you will hit the DD rate limit. There is logic to check and back off if that happens, but I've not tested it much
+DELAY_BETWEEN=3 # Time delay between datadog queries / how long to leave each metric displayed for. If set too low, you will hit the DD rate limit. There is logic to check and back off if that happens, but I've not tested it much
 RATE_LIMIT_BACKOFF=300 # Backoff timer if we start approaching the DD API Rate limit
 INTERVAL=600 # Time period to get metrics in
 
@@ -237,7 +237,11 @@ def datadog_get_metrics(current_time, query, metric_name, trailing_string, prefi
         r.close()
     except Exception as e:
         print(e)
-        return # Just return if we dont get a good value from DD
+        if "socket failures" in str(e): # TODO: Find out why these intermittent socket failures happen and handle them better. Not sure if its due to flakey wifi, a bug in the Adafruit libs or something else.
+            print('Restarting due to socket failures..')
+            supervisor.reload()
+        else:
+            return # Just return if we dont get a good value from DD
     time.sleep(DELAY_BETWEEN)
     return
 
